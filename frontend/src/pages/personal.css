@@ -1,0 +1,129 @@
+.personal-container {
+  min-height: 100vh;
+  width: 100%;
+  /* Changed from fixed 1550px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #30c065, #20ca5e, #128c7e, #2ef2db);
+  background-size: 300% 300%;
+  transition: transform 0.3s ease;
+  animation: gradientBtn 4s ease infinite;
+  padding: 16px;
+  overflow-x: hidden;
+}
+
+.animated-btn:hover {
+  transform: scale(1.08);
+}
+
+
+@keyframes gradientBtn {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.personal-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 360px;
+  /* constrained max width */
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.personal-logo {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.personal-card h2 {
+  margin-bottom: 6px;
+  color: #075e54;
+}
+
+.personal-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.personal-input {
+  width: 100%;
+  padding: 12px;
+  margin: 18px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.personal-input:focus {
+  outline: none;
+  border-color: #25d366;
+}
+
+.personal-btn {
+  width: 100%;
+  padding: 12px;
+  background: #25d366;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.personal-btn:hover {
+  background: #1ebe5d;
+}
+
+.personal-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: gray;
+}
+
+
+.personal-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.phone-input-box {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.country-code {
+  padding: 12px;
+  background: #000000;
+
+  font-size: 14px;
+  padding-left: 5px;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
